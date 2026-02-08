@@ -4,11 +4,25 @@
     box-sizing: border-box;
 }
 
-.header{
+:root{
+    --primaryColor: #3A3845;
+    --primaryFont: Inter;
+}
+
+.container{
+    width: calc(100% - 20%);
+    margin: 0 auto;
+}
+
+.row{
     display: flex;
-    gap: 232.5px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header{
     padding: 21.84px 0;
-    margin: 0 165px;
 }
 
 .list ul{
@@ -23,18 +37,62 @@
     list-style-type: none;
 }
 
+.menu{
+    display: none;
+    width: 25px;
+    height: 20px;
+}
+/* media for header */
+@media screen and (min-width:0px) and (max-width:997px){
+
+    .list{
+        display: none;
+    }
+    
+    .icons{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+}
+
 .collection_section{
-    display: flex;
-    flex-wrap: wrap;
     gap: 30px;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    margin: 0 165px;
 }
 
 .collection{
     width: calc((100% - 90px) /4);
+}
+
+@media screen and (min-width:0px) and (max-width:400px) {
+    .collection_section .row{
+        flex-direction: column;
+    }
+    .collection{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:770px) {
+    .collection{
+        width: calc((100% - 30px) /2);
+    }
+}
+
+@media screen and (min-width:771px) and (max-width:900px) {
+    .collection{
+         width: calc((100% - 60px) /3);
+    }
 }
 
 .collection h2{
@@ -43,4 +101,16 @@
 
 img{
     width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+}
+
+h2{
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
 }
