@@ -42,6 +42,10 @@ body{
     list-style-type: none;
 }
 
+.icons a:hover{
+    cursor: pointer;
+}
+
 .icons ul{
     display: flex;
     gap: 24px;
@@ -135,6 +139,8 @@ img{
 /*best seller section*/
 .best_sellers .row{
     gap: 30px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 }
 .best_sellers{
     padding: 80px 0px;
@@ -143,7 +149,7 @@ img{
 
 .best_sellers .item{
     text-align: left;
-    width: calc((100% - (3*30px)) / 4);
+   /* width: calc((100% - (3*30px)) / 4);*/
 }
 .best_sellers h2{
     font-family: Garamond;
@@ -184,7 +190,7 @@ img{
     width: 80%;
 }
 .best_sellers .add_to_cart{
-    padding: 15px 81.5px;
+    padding: 15px 73.5px;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -195,7 +201,7 @@ img{
     width: 100%;
 }
 
-@media screen and (min-width:0px) and (max-width:400px) {
+/*@media screen and (min-width:0px) and (max-width:400px) {
     .best_sellers .item {
         width: 100%;
     }
@@ -225,4 +231,4 @@ img{
         font-size: 16px;
     }
 
-}
+}*/
