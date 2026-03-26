@@ -127,14 +127,14 @@ body {
 }
 
 /*hero section*/
-.hero-section .bg-img{
+.hero-section .bg-img {
     background-image: url(./../Images/hero_imgs/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     height: 100vh;
-    position: relative;  
-} 
+    position: relative;
+}
 
 .hero-section .hero-content .content-img {
     position: absolute;
@@ -143,7 +143,7 @@ body {
     top: 0px;
 }
 
-.hero-content .content-details{
+.hero-content .content-details {
     position: absolute;
     top: 50%;
     left: 185px;
@@ -161,7 +161,7 @@ body {
 
     background-color: #826F66;
     height: 100vh;
-}  
+}
 
 
 
@@ -192,34 +192,38 @@ body {
     margin-top: 32px;
 }
 
-@media (max-width:1100px){
+.content-details .shop-btn:hover{
+    cursor: pointer;
+}
+
+@media (max-width:1100px) {
     @media (max-width: 1100px) {
 
-    .hero-section .hero-content {
-        display: flex;
-        flex-direction: column;
+        .hero-section .hero-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-section .bg-img {
+            height: 70vh;
+            background-position: center;
+        }
+
+        .hero-content .content-details {
+            position: static;
+            transform: none;
+            left: auto;
+            top: auto;
+
+            width: 100%;
+            max-width: 100%;
+
+            height: auto;
+            padding: 60px 20px;
+
+            background-color: #826F66;
+        }
     }
-
-    .hero-section .bg-img {
-        height: 70vh;
-        background-position: center;
-    }
-
-    .hero-content .content-details {
-        position: static;
-        transform: none;
-        left: auto;
-        top: auto;
-
-        width: 100%;
-        max-width: 100%;
-
-        height: auto;
-        padding: 60px 20px;
-
-        background-color: #826F66;
-    }
-}
 }
 
 
@@ -518,61 +522,6 @@ body {
     color: #fff;
 }
 
-/*@media screen and (min-width:0px) and (max-width:400px) {
-    .best_sellers .item {
-        width: 100%;
-    }
-    .best_sellers .add_to_cart{
-    padding: 15px 30px;
-    }
-}
-
-@media screen and (min-width:401px) and (max-width:700px) {
-    .best_sellers .item {
-        width: calc((100% - (1 * 30px)) / 2);
-    }
-    .best_sellers .add_to_cart{
-    padding: 15px 30px;
-    }
-}
-
-@media screen and (min-width:701px) and (max-width:960px) {
-    .best_sellers .item {
-        width: calc((100% - (2 * 30px)) / 3);
-    }
-    .best_sellers .add_to_cart{
-        padding: 15px 40.5px;
-        letter-spacing: 2px;
-    }
-    .best_sellers h3{
-        font-size: 16px;
-    }
-
-}*/
-
-/*history section*/
-/* .history-section .row{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr; /*will make the rows take the same height*/
-/* height: 650px;
-}
-
-.history-box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.history-box .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px;
-    background-color: var(--backgroundColor);
-} */
 
 .history-section .row {
     display: grid;
@@ -593,11 +542,6 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 64px 80px;
-}
-
-.history-box .box-content {
-    /* max-width: 400px; */
-    /* padding: 64px 60px; */
 }
 
 .history-box h2 {
@@ -952,7 +896,7 @@ body {
     }
 
     .sign-up-section input {
-        width: 50px;
+        width: 200px;
     }
 }
 
@@ -1015,7 +959,7 @@ body {
     margin-bottom: 40px;
 }
 
-.get-started-btn:hover{
+.get-started-btn:hover {
     cursor: pointer;
 }
 
@@ -1061,15 +1005,15 @@ body {
     padding: 32px 235.5px;
 }
 
-.footer-bottom .meduim{
+.footer-bottom .meduim {
     color: #A6A6A8;
 }
 
-.footer-bottom .light{
+.footer-bottom .light {
     color: #CAC9CF;
 }
 
-.footer-bottom a{
+.footer-bottom a {
     color: #807F86;
 }
 
@@ -1079,7 +1023,7 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .footer .footer-left{
+    .footer .footer-left {
         border: none;
         border-bottom: 1px solid #E5E5E5;
     }
@@ -1089,15 +1033,15 @@ body {
     }
 }
 
-@media (max-width:460px) { 
-    .footer-right{
+@media (max-width:460px) {
+    .footer-right {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width:350px) { 
-    .footer-right{
+@media (max-width:350px) {
+    .footer-right {
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
-    } 
+    }
 }
