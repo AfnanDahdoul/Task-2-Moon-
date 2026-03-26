@@ -192,7 +192,35 @@ body {
     margin-top: 32px;
 }
 
+@media (max-width:1100px){
+    @media (max-width: 1100px) {
 
+    .hero-section .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section .bg-img {
+        height: 70vh;
+        background-position: center;
+    }
+
+    .hero-content .content-details {
+        position: static;
+        transform: none;
+        left: auto;
+        top: auto;
+
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+        padding: 60px 20px;
+
+        background-color: #826F66;
+    }
+}
+}
 
 
 /*collection part*/
