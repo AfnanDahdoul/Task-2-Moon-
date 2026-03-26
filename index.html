@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOON</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/CSS/style.css" />
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="container">
             <div class="row">
                 <div class="menu">
@@ -39,53 +37,111 @@
                 </div>
                 <div class="icons">
                     <ul>
-                        <a href="#">
-                            <li><img src="./assets/Images/icons/Search.svg" /></li>
-                        </a>
-                        <a href="#">
-                            <li><img src="./assets/Images/icons/Avatar.svg" /></li>
-                        </a>
-                        <a href="#">
-                            <li><img src="./assets/Images/icons/Heart.svg" /></li>
-                        </a>
-                        <a href="#">
-                            <li id="cart"><img src="./assets/Images/icons/Shopping cart.svg" /></li>
-                        </a>
+                        <li class="icon">
+                            <a href="#">
+                                <img src="./assets/Images/icons/Search.svg" />
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href="#">
+                                <img src="./assets/Images/icons/Avatar.svg" />
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href="#">
+                                <img src="./assets/Images/icons/Heart.svg" />
+                            </a>
+                        </li>
+                        <li class="shopping_icon">
+                            <a href="#">
+                                <img src="./assets/Images/icons/Shopping cart.svg" />
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
         </div>
+    </header>
+    <div class="setting">
+        <img src="./assets/Images/icons/setting.svg" />
     </div>
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="bg-img"></div>
+            <img src="./assets/Images/hero_imgs/Content.svg" class="content-img" />
 
-    <div class="collection_section">
+
+            <div class="content-details">
+                <img src="./assets/Images/hero_imgs/small_logo.svg" width="81px" />
+                <p>Handcrafted in Viet Nam since 1650</p>
+                <h1>BAT TRANG<br>DINNER SET</h1>
+                <button class="shop-btn">shop now</button>
+            </div>
+        </div>
+    </section>
+    <section class="collection_section">
         <div class="container">
             <div class="row">
                 <div class="collection">
-                    <img src="./assets/Images/TableWare.png" />
-                    <h2>TableWare</h2>
+                    <div class="sale_badge">
+                        <span> SALE </span>
+                    </div>
+                    <img src="./assets/Images/collections/TableWare.png" />
+                    <div class="collection_details">
+                        <h2>TableWare</h2>
+                        <a>Details</a>
+                    </div>
                 </div>
                 <div class="collection">
-                    <img src="./assets/Images/Home Decor.png" />
-                    <h2>Home decor</h2>
+                    <img src="./assets/Images/collections/Home Decor.png" />
+                    <div class="collection_details">
+                        <h2>Home decor</h2>
+                        <a>Details</a>
+                    </div>
                 </div>
                 <div class="collection">
-                    <img src="./assets/Images/Holiday.png" />
-                    <h2>Holiday</h2>
+                    <img src="./assets/Images/collections/Holiday.png" />
+                    <div class="collection_details">
+                        <h2>Holiday</h2>
+                        <a>Details</a>
+                    </div>
                 </div>
                 <div class="collection">
-                    <img src="./assets/Images/collection.png" />
-                    <h2>Collection</h2>
+                    <img src="./assets/Images/collections/collection.png" />
+                    <div class="collection_details">
+                        <h2>Collection</h2>
+                        <a>Details</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="best_sellers">
+    </section>
+    <section class="christmas_offer_section">
+        <div class="container">
+            <div class="row">
+                <div class="offer-details">
+                    <div class="offer-content">
+                        <h2>up to 40% off our <br /> christmas collection</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+                            sit
+                            nullam neque ultrices.</p>
+                        <a href="#">shop now</a>
+                    </div>
+                </div>
+                <div class="offer-img">
+                    <img src="./assets/Images/christmas.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="best_sellers">
         <div class="container">
             <h2> BEST SELLER </h2>
             <div class="row">
                 <div class="item">
                     <div class="item_img">
-                        <img src="./assets/Images/best sellers imgs/mercer-grey-bowl.webp">
+                        <img src="./assets/Images/best sellers imgs/1 mercer-grey-bowl.webp">
                     </div>
                     <div class="item_content">
                         <h3> Small Ecru Ceramic Compote </h3>
@@ -96,10 +152,10 @@
                 </div>
                 <div class="item">
                     <div class="item_img">
-                        <img src="./assets/Images/best sellers imgs/mercer-grey-bowl.webp">
+                        <img src="./assets/Images/best sellers imgs/2 white vase.webp">
                     </div>
                     <div class="item_content">
-                        <h3> Small Ecru Ceramic Compote </h3>
+                        <h3> Warrick White Vase 14 </h3>
                         <span class="price"> $49.00 </span>
                         <p class="describtion">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.</p>
                         <button class="add_to_cart">add to cart</button>
@@ -107,10 +163,10 @@
                 </div>
                 <div class="item">
                     <div class="item_img">
-                        <img src="./assets/Images/best sellers imgs/mercer-grey-bowl.webp">
+                        <img src="./assets/Images/best sellers imgs/3 Porcelain Dinner Plate.webp">
                     </div>
                     <div class="item_content">
-                        <h3> Small Ecru Ceramic Compote </h3>
+                        <h3> Porcelain Dinner Plate </h3>
                         <span class="price"> $49.00 </span>
                         <p class="describtion">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.</p>
                         <button class="add_to_cart">add to cart</button>
@@ -118,10 +174,10 @@
                 </div>
                 <div class="item">
                     <div class="item_img">
-                        <img src="./assets/Images/best sellers imgs/mercer-grey-bowl.webp">
+                        <img src="./assets/Images/best sellers imgs/4 Warrick White Vase 20.webp">
                     </div>
                     <div class="item_content">
-                        <h3> Small Ecru Ceramic Compote </h3>
+                        <h3> Warrick White Vase 20 </h3>
                         <span class="price"> $49.00 </span>
                         <p class="describtion">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.</p>
                         <button class="add_to_cart">add to cart</button>
@@ -129,10 +185,10 @@
                 </div>
                 <div class="item">
                     <div class="item_img">
-                        <img src="./assets/Images/best sellers imgs/mercer-grey-bowl.webp">
+                        <img src="./assets/Images/best sellers imgs/5 Rounded Dual Handled Vase.webp">
                     </div>
                     <div class="item_content">
-                        <h3> Small Ecru Ceramic Compote </h3>
+                        <h3> Rounded Dual Handled Vase </h3>
                         <span class="price"> $49.00 </span>
                         <p class="describtion">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.</p>
                         <button class="add_to_cart">add to cart</button>
@@ -140,10 +196,10 @@
                 </div>
                 <div class="item">
                     <div class="item_img">
-                        <img src="./assets/Images/best sellers imgs/mercer-grey-bowl.webp">
+                        <img src="./assets/Images/best sellers imgs/6 Marin White Dinner Plate.webp">
                     </div>
                     <div class="item_content">
-                        <h3> Small Ecru Ceramic Compote </h3>
+                        <h3> Marin White Dinner Plate </h3>
                         <span class="price"> $49.00 </span>
                         <p class="describtion">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.</p>
                         <button class="add_to_cart">add to cart</button>
@@ -151,10 +207,10 @@
                 </div>
                 <div class="item">
                     <div class="item_img">
-                        <img src="./assets/Images/best sellers imgs/mercer-grey-bowl.webp">
+                        <img src="./assets/Images/best sellers imgs/7 Tall Cream Ceramic Vase.webp">
                     </div>
                     <div class="item_content">
-                        <h3> Small Ecru Ceramic Compote </h3>
+                        <h3> Tall Cream Ceramic Vase </h3>
                         <span class="price"> $49.00 </span>
                         <p class="describtion">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.</p>
                         <button class="add_to_cart">add to cart</button>
@@ -162,10 +218,10 @@
                 </div>
                 <div class="item">
                     <div class="item_img">
-                        <img src="./assets/Images/best sellers imgs/mercer-grey-bowl.webp">
+                        <img src="./assets/Images/best sellers imgs/8 Luana Bowl.webp">
                     </div>
                     <div class="item_content">
-                        <h3> Small Ecru Ceramic Compote </h3>
+                        <h3> Luana Bowl </h3>
                         <span class="price"> $49.00 </span>
                         <p class="describtion">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.</p>
                         <button class="add_to_cart">add to cart</button>
@@ -173,7 +229,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>
