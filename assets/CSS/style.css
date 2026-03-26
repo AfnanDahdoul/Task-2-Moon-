@@ -431,13 +431,18 @@ body {
     }
 }
 
-@media screen and (min-width:535px) and (max-width:849px) {
+@media screen and (min-width:535px) and (max-width:850px) {
 
     .christmas_offer_section .offer-details,
     .christmas_offer_section .offer-img {
         width: 100%;
     }
-    .offer-details .offer-content{
+
+    .offer-details h2 {
+        font-size: 22px;
+    }
+
+    .offer-details .offer-content {
         padding: 64px 0px;
     }
 }
@@ -448,9 +453,11 @@ body {
     .christmas_offer_section .offer-img {
         width: 100%;
     }
-    .offer-details .offer-content{
+
+    .offer-details .offer-content {
         padding: 64px 0px;
     }
+
     .offer-details h2 {
         font-size: 22px;
     }
@@ -585,7 +592,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr; /*will make the rows take the same height*/
-    /* height: 650px;
+/* height: 650px;
 }
 
 .history-box img{
@@ -602,35 +609,35 @@ body {
     text-align: center;
     padding: 40px;
     background-color: var(--backgroundColor);
-} */ 
+} */
 
-.history-section .row{
+.history-section .row {
     display: grid;
     grid-auto-rows: 324px;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
     width: 100%;
     background-color: var(--backgroundColor);
 }
 
-.history-section .history-box{
+.history-section .history-box {
     height: 100%;
 }
 
-.history-box.text{
+.history-box.text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 64px 60px;
+padding: 64px 80px;
 }
 
-.history-box .box-content{
-    max-width: 400px;
+.history-box .box-content {
+    /* max-width: 400px; */
+    /* padding: 64px 60px; */
 }
 
-.history-box h2{
+.history-box h2 {
     font-weight: 700;
     font-family: garamond;
     font-size: 28px;
@@ -639,7 +646,7 @@ body {
     text-transform: uppercase;
 }
 
-.history-box p{
+.history-box p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -648,14 +655,14 @@ body {
     margin-bottom: 32px;
 }
 
-.history-box a{
+.history-box a {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
     color: var(--primaryColor);
 }
 
-.history-box.image img{
+.history-box.image img {
     width: 100%;
     height: 100%;
     display: block;
@@ -677,3 +684,136 @@ body {
     }
 }
 
+@media (max-width: 700px) {
+    .history-box a{
+        font-size: 14px;
+    }
+
+    .history-box.text{
+        padding: 44px 60px;
+    }
+}
+
+
+/*blog section*/
+.blog-section {
+    text-align: center;
+}
+
+.blog-section h2 {
+    margin-bottom: 48px;
+    font-family: garamond;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.blog-section .row {
+    align-items: stretch;
+}
+
+.blog-section .blog-details,
+.blog-section .blog-img {
+    width: calc(100% / 2);
+    flex-grow: 1;
+}
+
+.blog-section .blog-details {
+    padding: 64px 0px;
+    background-color: var(--backgroundColor);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-content {
+    padding: 0px 82px;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-content span {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 6%;
+    color: #807F86;
+}
+
+.blog-content h3 {
+    font-family: garamond;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    margin: 24px 0px;
+}
+
+.blog-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #595667;
+    margin-bottom: 32px;
+}
+
+.blog-content a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 6%;
+    text-transform: uppercase;
+    color: #595667;
+}
+
+
+
+@media screen and (min-width:850px) and (max-width:1026px) {
+
+    .blog-content {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (min-width:535px) and (max-width:850px) {
+
+    .blog-section .blog-details,
+    .blog-section .blog-img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:535px) {
+
+    .blog-section .blog-details,
+    .blog-section .blog-img {
+        width: 100%;
+    }
+
+    .blog-content{
+        padding: 0px 20px;
+    }
+
+    .blog-details h3 {
+        font-size: 22px;
+    }
+
+    .blog-details span {
+        font-size: 13px;
+    }
+
+    .blog-details p {
+        font-size: 12px;
+    }
+
+    .blog-details a {
+        font-size: 10px;
+    }
+}
