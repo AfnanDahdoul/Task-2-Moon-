@@ -478,6 +478,7 @@ body {
     gap: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: stretch;
 }
 
 .best_sellers {
@@ -490,6 +491,8 @@ body {
     /* width: calc((100% - (3*30px)) / 4);*/
     box-shadow: 0px 0px 10px 5px lightgrey;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .best_sellers h2 {
@@ -507,6 +510,9 @@ body {
 
 .best_sellers .item_content {
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .best_sellers h3 {
@@ -533,6 +539,7 @@ body {
     margin-top: 24px;
     margin-bottom: 58px;
     width: 80%;
+    flex-grow: 1;
 }
 
 .best_sellers .add_to_cart {
@@ -816,4 +823,93 @@ padding: 64px 80px;
     .blog-details a {
         font-size: 10px;
     }
+}
+
+
+/*new arrival section*/
+.new-arrival-section .row{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: stretch;
+}
+
+.new-arrival-section{
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.new-arrival-section .item{
+    text-align: left;
+    box-shadow: 0px 0px 10px 5px lightgrey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-arrival-section h2 {
+    font-family: Garamond;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.new-arrival-section img{
+    width: 100%;
+}
+
+.new-arrival-section .item_content{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.new-arrival-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.new-arrival-section .price {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 6%;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.new-arrival-section .describtion {
+    color: #807F86;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 58px;
+    width: 80%;
+    flex-grow: 1;
+}
+
+.new-arrival-section .add_to_cart {
+    padding: 15px 63.5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 4px;
+    background-color: #fff;
+    border: 1px solid var(--primaryColor);
+    text-transform: uppercase;
+    width: 100%;
+    transition: background-color 1s, color 0.5s;
+}
+
+.new-arrival-section .item:hover .add_to_cart {
+    cursor: pointer;
+    background-color: teal;
+    border: 1px solid rgb(0, 102, 128);
+    color: #fff;
 }
